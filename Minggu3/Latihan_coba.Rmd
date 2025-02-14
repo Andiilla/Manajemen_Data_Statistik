@@ -1,2 +1,18 @@
-library(car)
+# MySQL
+install.packages("DBI")
+install.packages("RMySQL")
+library(DBI)
+con <- dbConnect(RMySQL::MySQL(), dbname = "D:\KULIAH S2 IPB\SEMESTER 2\MANAJEMEN DATA STATISTIKA\Manajemen_Data_Statistik\Minggu3", host = "localhost", user = "root", password = "password")
+
+# PostgreSQL
+install.packages("RPostgreSQL")
+library(DBI)
+library(RPostgreSQL)
+con <- dbConnect(PostgreSQL(), 
+                 dbname = "D:/KULIAH S2 IPB/SEMESTER 2/MANAJEMEN DATA STATISTIKA/Manajemen_Data_Statistik/Minggu3", 
+                 host = "localhost", 
+                 user = "postgres", 
+                 password = "password")
+
+
 
